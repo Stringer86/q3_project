@@ -9,6 +9,7 @@ exports.up = function(knex) {
     table.specificType('hashed_password', 'char(60)');
     table.string('photo_url');
     table.text('bio').defaultTo('');
+    table.timestamps(true, true);
   });
 };
 
