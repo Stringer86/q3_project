@@ -3,17 +3,19 @@
 exports.up = function(knex) {
   return knex.schema.createTable('lessons', (table) => {
     table.increments();
+
     table.integer('user_id')
       .notNullable()
       .references('id')
       .inTable('users')
       .onDelete('CASCADE');
+
     table.string('category');
     table.string('title').notNullable().defaultTo('');
     table.text('description').notNullable().defaultTo('');
     table.boolean('published').notNullable();
     table.text('body').notNullable().defaultTo('');
-    table.integer('favorites');
+    table.integer('likes');
     table.timestamps(true, true);
   });
 };
