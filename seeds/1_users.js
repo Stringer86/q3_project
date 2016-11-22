@@ -7,6 +7,7 @@ exports.seed = function(knex) {
         id: 1,
         first_name: 'Rad',
         last_name: 'Ric',
+        user_name: 'RadicalRic',
         email: 'radicalric@gmail.com',
         hashed_password: '$2a$12$LaKBUi8mCFc/9LiCtvwcvuNIjgaq9LJuy/NO.m4P5.3FP8zA6t2Va', // ambitionz
         photo_url: 'http://ghk.h-cdn.co/assets/16/09/980x490/landscape-1457107485-gettyimages-512366437.jpg',
