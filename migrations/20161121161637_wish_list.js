@@ -1,7 +1,7 @@
 'use strict';
 
 exports.up = function(knex) {
-  return knex.schema.createTable('wishList', (table) => {
+  return knex.schema.createTable('wish_list', (table) => {
     table.increments();
     table.string('question').notNullable().defaultTo('');
     table.string('category').notNullable().defaultTo('');
